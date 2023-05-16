@@ -67,7 +67,6 @@ export default function App({ Component, pageProps }) {
       opacity: 1,
       ease: "expo.out",
       duration: 2,
-      yPercent: -4,
       delay: 0.35,
     });
   }, []);

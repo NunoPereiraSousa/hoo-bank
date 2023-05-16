@@ -23,8 +23,6 @@ export const Paragraph = ({ size = "sm", children }) => {
         delay: 0.2,
         scrollTrigger: {
           trigger: element.current,
-          // markers: true,
-          start: "80% bottom",
         },
       }
     );
