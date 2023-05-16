@@ -7,6 +7,8 @@ import { PrismicPreview } from "@prismicio/next";
 import { repositoryName, linkResolver } from "../prismicio";
 import { Paragraph } from "../components/Paragraph";
 import { Heading } from "../components/Heading";
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
 
 const richTextComponents = {
   paragraph: ({ children }) => <Paragraph size="sm">{children}</Paragraph>,
@@ -58,6 +60,18 @@ const NextLinkShim = ({ href, children, locale, ...props }) => {
 };
 
 export default function App({ Component, pageProps }) {
+  const element = useRef(null);
+
+  useEffect(() => {
+    gsap.to(element.current, {
+      opacity: 1,
+      ease: "expo.out",
+      duration: 2,
+      yPercent: -4,
+      delay: 0.35,
+    });
+  }, []);
+
   return (
     <PrismicProvider
       linkResolver={linkResolver}
@@ -65,7 +79,9 @@ export default function App({ Component, pageProps }) {
       richTextComponents={richTextComponents}
     >
       <PrismicPreview repositoryName={repositoryName}>
-        <Component {...pageProps} />
+        <div ref={element} className="page">
+          <Component {...pageProps} />
+        </div>
       </PrismicPreview>
     </PrismicProvider>
   );
