@@ -1,0 +1,66 @@
+.testimonial_card {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(0.5rem);
+  border-radius: 2rem;
+  padding: 6rem 4rem;
+
+  @include media("<=tablet") {
+    padding: 4rem 2rem;
+  }
+}
+
+.testimonial_quote_image {
+}
+
+.testimonial_quote {
+  @extend %description-18;
+
+  margin: 4rem 0 3rem;
+  max-width: 29rem;
+}
+
+.testimonial_profile {
+  @extend %align-center-vertically;
+
+  gap: 1.6rem;
+}
+
+.testimonial_profile_figure {
+  border-radius: 50%;
+  height: 4.8rem;
+  position: relative;
+  width: 4.8rem;
+}
+
+.testimonial_profile_image {
+  @extend %cover;
+
+  object-fit: cover;
+}
+
+.testimonial_profile_info {
+  @extend %flex-column;
+
+  gap: 0.8rem;
+}
+
+.testimonial_profile_name {
+  @extend %header-20;
+
+  p {
+    line-height: 1 !important;
+  }
+}
+
+.testimonial_profile_role {
+  opacity: 0.5;
+
+  p {
+    line-height: 1 !important;
+  }
+}

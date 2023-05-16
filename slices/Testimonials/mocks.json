@@ -1,0 +1,129 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"headline": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Duis labore in labore et. Voluptate nostrud dolore do culpa Lorem do excepteur fugiat anim elit veniam eiusmod ut excepteur anim."
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Enim aliquip laboris non enim officia. Nostrud dolore velit sit fugiat non ea aliqua laboris minim dolor mollit incididunt incididunt."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"quote",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Voluptate quis ad labore consequat reprehenderit eiusmod sint voluptate tempor nisi ipsum ullamco occaecat ipsum."
+									}
+								}
+							]
+						}
+					],
+					[
+						"profile_image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+								"width": 2747,
+								"height": 4120
+							},
+							"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+							"width": 2747,
+							"height": 4120,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Adipisicing ipsum amet culpa aliqua eiusmod dolor veniam labore minim proident est anim dolore. Consequat laborum nisi occaecat anim laboris sunt non. Aute mollit veniam nostrud veniam Lorem."
+									}
+								}
+							]
+						}
+					],
+					[
+						"role",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Elit aute non exercitation est ullamco in do."
+									}
+								}
+							]
+						}
+					],
+					[
+						"quote_image",
+						{
+							"__TYPE__": "ImageContent",
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+								"width": 3168,
+								"height": 4752
+							},
+							"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+							"width": 3168,
+							"height": 4752,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]

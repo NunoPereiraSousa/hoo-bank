@@ -1,0 +1,130 @@
+.footer {
+  @include media("<=tablet") {
+    padding: 0 2rem;
+  }
+}
+
+.footer_wrapper {
+  @extend %max-width;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include media("<=tablet") {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.footer_info {
+}
+
+.footer_figure {
+  height: 7.214rem;
+  position: relative;
+  width: 27.6rem;
+}
+
+.footer_logo {
+  @extend %cover;
+
+  object-fit: cover;
+}
+
+.footer_description {
+  @extend %description-18;
+
+  margin-top: 3rem;
+  max-width: 31.2rem;
+}
+
+.footer_links {
+  display: flex;
+  gap: 12.6rem;
+
+  @include media("<=tablet") {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  @include media("<phone") {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.footer_links_column {
+  @extend %flex-column;
+
+  gap: 2.4rem;
+}
+
+.footer_category {
+  @extend %description-18;
+
+  line-height: 1;
+}
+
+.footer_links_wrapper {
+  @extend %flex-column;
+
+  gap: 1.2rem;
+}
+
+.footer_link {
+  line-height: 1.25;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+.copyright {
+  margin-top: 4rem;
+
+  @include media("<=tablet") {
+    padding: 0 2rem;
+  }
+}
+
+.copyright_wrapper {
+  @extend %max-width;
+  @extend %space-between;
+
+  border-top: 0.1rem solid $color-dark-grey;
+  padding: 3rem 0;
+
+  @include media("<phone") {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.copyright_info {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.copyright_description {
+  @extend %description-18;
+
+  opacity: 0.6;
+}
+
+.copyright_socials {
+  display: flex;
+  gap: 3rem;
+}
+
+.copyright_social {
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.copyright_social_image {
+}

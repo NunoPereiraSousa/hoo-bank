@@ -1,0 +1,37 @@
+{
+  "id": "homepage",
+  "label": "homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "type": "UID", "config": { "label": "UID", "placeholder": "" } },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "call_to_action": { "type": "SharedSlice" },
+            "hero": { "type": "SharedSlice" },
+            "sponsors": { "type": "SharedSlice" },
+            "statistics": { "type": "SharedSlice" },
+            "testimonials": { "type": "SharedSlice" },
+            "two_column_content": { "type": "SharedSlice" },
+            "footer": { "type": "SharedSlice" },
+            "copyright_bar": { "type": "SharedSlice" }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": { "label": "Meta Title", "placeholder": "" }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": { "label": "Meta Description", "placeholder": "" }
+      }
+    }
+  }
+}

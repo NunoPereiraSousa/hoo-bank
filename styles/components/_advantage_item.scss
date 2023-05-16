@@ -1,0 +1,50 @@
+.advantage_item {
+  align-items: center;
+  background: transparent;
+  border-radius: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+
+  &:hover {
+    background-color: $color-dark-grey;
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  }
+
+  &:hover .advantage_item_icon {
+    animation-play-state: running;
+  }
+
+  @include media("<phone") {
+    background-color: rgba($color: $color-dark-grey, $alpha: 0.2);
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  }
+}
+
+.advantage_item_icon {
+  animation: pulse 2s ease-out infinite;
+  animation-play-state: paused;
+
+  @include media("<phone") {
+    animation-play-state: running;
+  }
+}
+
+.advantage_item_info {
+}
+
+.advantage_item_info_headline {
+  @extend %description-18;
+
+  font-weight: 600;
+  letter-spacing: 1%;
+}
+
+.advantage_item_info_description {
+  .paragraph.md {
+    @extend %description-18;
+  }
+
+  max-width: 40rem;
+  opacity: 0.7;
+}

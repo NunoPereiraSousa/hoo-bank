@@ -1,0 +1,446 @@
+.hero {
+  padding: 14rem 9rem 8rem;
+  position: relative;
+  width: 100%;
+
+  @include media("<=tablet") {
+    padding: 18rem 2rem 12rem;
+  }
+}
+
+.hero_wrapper {
+  @extend %space-between;
+  @extend %max-width;
+
+  align-items: center;
+
+  height: 100%;
+
+  @include media("<=tablet") {
+    display: block;
+    margin: 0;
+  }
+}
+
+.hero_left {
+  position: relative;
+}
+
+.hero_toolbar {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem 1rem;
+  width: fit-content;
+}
+
+.hero_toolbar_icon {
+}
+
+.hero_toolbar_label {
+  color: $color-grey;
+  text-transform: uppercase;
+
+  strong {
+    color: $color-white;
+  }
+}
+
+.hero_left_headline {
+  margin-bottom: 4rem;
+  max-width: 67rem;
+  white-space: nowrap;
+
+  strong {
+    @extend %text-gradient;
+  }
+
+  @include media("<phone") {
+    white-space: normal;
+  }
+}
+
+.hero_left_description {
+  max-width: 48.3rem;
+  opacity: 0.7;
+
+  @include media("<phone") {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.hero_left_button {
+  @extend %center;
+  @extend %text-gradient;
+  @extend %description-18;
+
+  left: 47rem;
+  position: absolute;
+  top: 8rem;
+
+  cursor: pointer;
+  font-weight: 800;
+  height: 14rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: 14rem;
+
+  @include media("<phone") {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    border-radius: 50%;
+    background: linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    );
+    mask-composite: exclude;
+    padding: 0.3rem;
+    position: absolute;
+    inset: 0;
+    -webkit-mask: linear-gradient($color-white 0 0) content-box,
+      linear-gradient($color-white 0 0);
+    -webkit-mask-composite: xor;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hero_right {
+  height: 67.4rem;
+  width: 66.9rem;
+
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+.hero_figure {
+  height: 67.4rem;
+  position: relative;
+  width: 66.9rem;
+}
+
+.hero_image {
+  @extend %cover;
+
+  object-fit: cover;
+}
+
+.hero_blob {
+  position: absolute;
+  width: 345px;
+  height: 514px;
+  left: 992.41px;
+  top: -384.95px;
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(450px);
+  border-radius: 200px;
+  transform: rotate(-20.01deg);
+
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+/* STATISTICS SECTION */
+
+.statistics {
+  @include media("<=tablet") {
+    padding: 0 2rem;
+  }
+}
+
+.statistics_wrapper {
+  @extend %max-width;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  @include media("<=tablet") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+  }
+
+  @include media("<phone") {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* INFO SECTION */
+
+.info {
+  &.default {
+    padding: 21rem 0;
+
+    .info_headline {
+      max-width: 62.2rem;
+    }
+
+    .info_description {
+      max-width: 57rem;
+    }
+
+    @include media("<=tablet") {
+      padding: 12rem 2rem;
+    }
+  }
+
+  &.withButtons {
+    .info_figure {
+      height: 45.5rem;
+      position: relative;
+      width: 53rem;
+
+      @include media("<phone") {
+        height: 30.5rem;
+        width: 100%;
+      }
+    }
+
+    .info_image {
+      @extend %cover;
+
+      object-fit: cover;
+    }
+
+    .info_headline {
+      max-width: 47rem;
+    }
+
+    .info_description {
+      max-width: 47rem;
+    }
+
+    .info_buttons {
+      display: flex;
+      gap: 3.2rem;
+    }
+
+    .mobile_app_button {
+      background-color: $color-black;
+      border-radius: 1rem;
+      cursor: pointer;
+      padding: 0.8rem 1rem;
+      transition: all 0.4s ease;
+
+      &:hover {
+        background-color: rgba($color: $color-grey, $alpha: 0.5);
+        transform: scale(1.05);
+      }
+    }
+
+    @include media("<=tablet") {
+      padding: 0 2rem;
+    }
+  }
+
+  &.withButtonNoList {
+    padding: 21rem 0;
+
+    @include media("<=tablet") {
+      padding: 12rem 2rem;
+    }
+
+    .info_figure {
+      height: 44.9rem;
+      position: relative;
+      width: 51.3rem;
+
+      @include media("<phone") {
+        height: 30.5rem;
+        width: 100%;
+      }
+    }
+
+    .info_image {
+      @extend %cover;
+
+      object-fit: cover;
+    }
+
+    .info_headline {
+      max-width: 57rem;
+    }
+
+    .info_description {
+      max-width: 50rem;
+    }
+  }
+}
+
+.info_wrapper {
+  @extend %space-between;
+  @extend %max-width;
+
+  align-items: flex-start;
+
+  @include media("<=tablet") {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.info_content {
+}
+
+.info_headline {
+  margin-bottom: 2.4rem;
+}
+
+.info_description {
+  margin-bottom: 3.4rem;
+  opacity: 0.7;
+}
+
+.info_button {
+  @extend %description-18;
+  @extend %text-gradient;
+
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  padding: 2rem 3.2rem;
+
+  &::before {
+    content: "";
+    border-radius: 1rem;
+    background: linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    );
+    mask-composite: exclude;
+    padding: 0.2rem;
+    position: absolute;
+    inset: 0;
+    -webkit-mask: linear-gradient($color-white 0 0) content-box,
+      linear-gradient($color-white 0 0);
+    -webkit-mask-composite: xor;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    );
+    color: $color-black;
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+    -webkit-text-fill-color: $color-black;
+  }
+}
+
+.info_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+  @include media("<=tablet") {
+    padding: 0 2rem;
+  }
+}
+
+.testimonials_wrapper {
+  max-width: 144rem;
+  margin: auto;
+}
+
+.testimonials_headlines {
+  @extend %align-center-vertically;
+
+  gap: 10rem;
+  margin-bottom: 11rem;
+
+  @include media("<=tablet") {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.testimonials_headline {
+  max-width: 40.7rem;
+}
+
+.testimonials_description {
+  @extend %description-18;
+
+  max-width: 45rem;
+  opacity: 0.7;
+}
+
+.testimonials_grid {
+  @extend %space-between;
+
+  @include media("<=tablet") {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+/* TESTIMONIALS SECTION */
+
+.sponsors {
+  padding: 11rem 0;
+
+  @include media("<=tablet") {
+    padding: 12rem 2rem;
+  }
+}
+
+.sponsors_wrapper {
+  max-width: 144rem;
+  margin: auto;
+}
+
+.sponsors_grid {
+  @extend %center;
+
+  gap: 10rem;
+
+  @include media("<=tablet") {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+
+  @include media("<phone") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sponsors_image {
+  max-height: 6rem;
+  max-width: 19.225rem;
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}

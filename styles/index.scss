@@ -1,0 +1,20 @@
+@import "./shared/reset";
+@import "./shared/variables";
+@import "./shared/_responsive";
+@import "./shared/base";
+@import "./shared/_animations";
+
+@import "./utils/mixins";
+
+@import "./typography/header";
+@import "./typography/paragraph";
+@import "./typography/_classes";
+
+@import "./components/navigation";
+@import "./components/footer";
+@import "./components/_statistics_item";
+@import "./components/_advantage_item";
+@import "./components/_testimonial_card";
+@import "./components/_call_to_action";
+
+@import "./pages/homepage";

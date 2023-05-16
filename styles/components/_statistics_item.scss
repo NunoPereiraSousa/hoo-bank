@@ -1,0 +1,53 @@
+.statistics_item {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  padding-left: 6rem;
+  padding-right: 6rem;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include media("<=tablet") {
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.2rem;
+    height: 1.4rem;
+    background-color: rgba($color: $color-white, $alpha: 0.6);
+
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+}
+
+.statistics_item_number {
+  .heading.md {
+    @extend %header-48;
+  }
+}
+
+.statistics_item_description {
+  @extend %header-20;
+  // @extend %text-gradient;
+
+  font-weight: 500;
+  color: $color-blue;
+}

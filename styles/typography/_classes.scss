@@ -1,0 +1,20 @@
+.paragraph {
+  &.sm {
+    @extend %description-16;
+  }
+  &.md {
+    @extend %description-18;
+  }
+}
+
+.heading {
+  &.xl {
+    @extend %header-72;
+  }
+  &.lg {
+    @extend %header-48;
+  }
+  &.md {
+    @extend %header-20;
+  }
+}

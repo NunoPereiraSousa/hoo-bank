@@ -1,0 +1,61 @@
+.navigation {
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+
+  @include media("<=tablet") {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.navigation_wrapper {
+  max-width: 152rem;
+  margin: auto;
+
+  @extend %space-between;
+
+  background: rgba($color-white, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  padding: 2rem 4rem;
+
+  @include media("<phone") {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    width: 100%;
+  }
+}
+
+.navigation_links {
+  display: flex;
+  gap: 5.6rem;
+
+  @include media("<phone") {
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+}
+
+.navigation_link {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
