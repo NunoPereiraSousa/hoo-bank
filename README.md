@@ -43,7 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Acknowledgments
 
-- [Next.js](https://nextjs.org/))
+- [Next.js](https://nextjs.org/)
 - [Prismic](https://prismic.io/)
 - [Sass](https://sass-lang.com/)
 - [GSAP](https://greensock.com/gsap/)
