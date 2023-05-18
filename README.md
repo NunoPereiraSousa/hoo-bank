@@ -1,4 +1,5 @@
 ![HooBank](https://hoobank.cdn.prismic.io/hoobank/ba8590d4-a3e9-4fa2-9460-f1b5e8468838_Logo.svg)
+HooBank is a Next Generation Payment Method Startup founded by a team of experts that uses a unique methodology to identify credit cards that most likely fit the user needs. They examine annual percentage rates, annual fees, and more.
 
 URL to the project: https://hoo-bank-nunops.vercel.app/
 
@@ -6,7 +7,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/your/repository.git
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -16,23 +29,28 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the the application running.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Fully customizable website with a CMS (Prismic)
+- Animations on Scroll
+- Mouse Interactions
+- Internationalization (coming soon!)
+- Fully responsible to all deviced and browsers
+- Design done on Figma 
 
-## Learn More
+## Acknowledgments
 
-To learn more about Next.js, take a look at the following resources:
+[Next.js]([https://www.google.com](https://nextjs.org/))
+[Prismic](https://prismic.io/)
+[Sass](https://sass-lang.com/)
+[GSAP](https://greensock.com/gsap/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Vercel](https://vercel.com/)
 
-## Deploy on Vercel
+## Thank you!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Don't forget to check out my award winner portfolio: [Nuno PS](https://nunops.com/)
