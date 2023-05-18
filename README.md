@@ -1,3 +1,5 @@
+![HooBank](https://hoobank.cdn.prismic.io/hoobank/ba8590d4-a3e9-4fa2-9460-f1b5e8468838_Logo.svg)
+
 URL to the project: https://hoo-bank-nunops.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
